@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: louis's blogs
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Louis Liu
+language: zh-CN
 timezone: ''
 
 # URL
@@ -24,11 +24,13 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
+archive_dir: /
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+ - robots.txt
+ - CNAME
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -60,7 +62,7 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: 'archives'
   per_page: 10
   order_by: -date
 
@@ -96,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
