@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.louisym.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.28.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="louis&#39;s blogs">
+<meta property="og:url" content="https://blog.louisym.com/ori/index.html">
+<meta property="og:site_name" content="louis&#39;s blogs">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Louis Liu">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.louisym.com/ori/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"ori/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>louis's blogs</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js" defer></script>
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">louis's blogs</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Louis Liu</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.louisym.com/2026/07/09/pseudospectral-method/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Louis Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="louis's blogs">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | louis's blogs">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/07/09/pseudospectral-method/" class="post-title-link" itemprop="url">pseudospectral-method</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2026-07-09 02:15:42 / 修改时间：03:04:25" itemprop="dateCreated datePublished" datetime="2026-07-09T02:15:42-04:00">2026-07-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/trajectory-optimization/" itemprop="url" rel="index"><span itemprop="name">trajectory optimization</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="伪谱法应用于最优控制问题">1 伪谱法应用于最优控制问题</h2>
+<p>伪谱法 (Pseudospectral Method) 利用正交多项式根作为非均匀离散配点,
+通过插值多项式对系统的状态与控制变量进行参数化处理. 相较于传统配点法,
+伪谱法能够利用较少的离散节点实现更高的近似精度,避免了传统均匀插值方法产生的“龙格”现象,具有对初值不敏感,
+收敛性良好的优点, 适用性广, 具备在线轨迹规划应用的潜力.
+依据积分方法与离散节点配置的不同, 可以将伪谱法分为 Legendre-Gauss(LG)
+伪谱法,Legendre-Guass-Lobatto(LGL) 伪谱法,Chebyshev-Guass-Lobatto(CGL)
+伪谱法,Legendre-Guass-Radau(LGR)伪谱法等方法.</p>
+<h2 id="最优控制分类">1.1 最优控制分类</h2>
+<p>动力下降问题分类1<sup>[1-3]</sup> <img
+src="https://cdn-mineru.openxlab.org.cn/result/2026-07-09/4dbbe444-1310-46df-9a0d-3cf023d03574/b3a1802ce61d284786cb4736c341e0f823fc235717a1f2f3504a346ce55577d0.jpg"
+alt="image" /></p>
+<p>图 1: PDG 分类</p>
+<p>动力下降问题分类2<sup>[4]</sup> <img
+src="https://cdn-mineru.openxlab.org.cn/result/2026-07-09/4dbbe444-1310-46df-9a0d-3cf023d03574/56f31a64afabb01333e34059bff2c036b1ab8b216c77184333757d7a44600f46.jpg"
+alt="image" /></p>
+<p>图 2: PDG 分类</p>
+<p>数值方法分类<sup>[5-6]</sup> 直接法分类</p>
+<figure>
+<img
+src="https://cdn-mineru.openxlab.org.cn/result/2026-07-09/4dbbe444-1310-46df-9a0d-3cf023d03574/157e5a0fa46b3ce011fab62456836383b378b7db10ecdf178180d40f00a36f1a.jpg"
+alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<p>图 3: Numerical solution approaches</p>
+<figure>
+<img
+src="https://cdn-mineru.openxlab.org.cn/result/2026-07-09/4dbbe444-1310-46df-9a0d-3cf023d03574/0d0490d852f7b177a1426760a6f30076c8914cd9d09bf7785152c99f044556c2.jpg"
+alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<p>图 4: Numerical solution approaches</p>
+<figure>
+<img
+src="https://cdn-mineru.openxlab.org.cn/result/2026-07-09/4dbbe444-1310-46df-9a0d-3cf023d03574/1f0abffa2ea3b98f6c9cdedc4d6bd54b584c7ba89d4da8030275d893c96e5fae.jpg"
+alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<p>图 5: Numerical solution approaches</p>
+<figure>
+<img
+src="https://cdn-mineru.openxlab.org.cn/result/2026-07-09/4dbbe444-1310-46df-9a0d-3cf023d03574/45c35c5b973fbc735583081afd5148f4a80c3f6b1e6a3c1c548c472ed4960f86.jpg"
+alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<p>图 6: Numerical solution approaches</p>
+<h2 id="使用-lgr-配点的-rpm-方法">1.2 使用 LGR 配点的 RPM 方法</h2>
+<p>LPM 和 GPM 作为直接法都能将最优控制问题通过在配点处离散转化为 NLP,
+具备指数收敛速度, 但是 LPM
+配点在两个边界处的特点使得其对协态的估计并不准确.GPM没有这个问题,
+能够证明使用 GPM 的 NLP 与原连续时间最优控制问题具有等价性, 然而,
+在初始边界处的控制并不是从 NLP 解中获得的. 相比之下,RPM 下的 NLP
+最优性条件与原问题等价, 同时能直接解出初始控制量,并且复杂度明显低于
+RPM<sup>[7]</sup>.</p>
+<h2 id="拉格朗日多项式-lagrange-polynomials">1.2.1 拉格朗日多项式
+(Lagrange polynomials)</h2>
+<p>在N+1 个节点上的N 次拉格朗日插值多项式有如下表述<sup>[8]</sup>: <span
+class="math display">$$
+L_{i}(\tau) = \prod_{\substack{j = 1\\ j\neq i}}^{N}\frac{\tau -
+\tau_{j}}{\tau_{i} - \tau_{j}},\quad (i = 0,\ldots ,N).
+$$</span> 若引入记号 <span
+class="math display"><em>g</em><sub><em>N</em></sub>(<em>τ</em>) = (<em>τ</em> − <em>τ</em><sub>0</sub>)(<em>τ</em> − <em>τ</em><sub>1</sub>)…(<em>τ</em> − <em>τ</em><sub><em>n</em></sub>),  <em>n</em> = 0, 1, 2, ….</span>
+易得 <span
+class="math display"><em>g</em><sub><em>N</em></sub><sup>′</sup>(<em>τ</em><sub><em>k</em></sub>) = (<em>τ</em><sub><em>k</em></sub> − <em>τ</em><sub>0</sub>)…(<em>τ</em><sub><em>k</em></sub> − <em>τ</em><sub><em>k</em> − 1</sub>)(<em>τ</em><sub><em>k</em></sub> − <em>τ</em><sub><em>k</em> + 1</sub>)…(<em>τ</em><sub><em>k</em></sub> − <em>τ</em><sub><em>n</em></sub>),  <em>n</em> = 0, 1, 2, ….</span>
+故拉格朗日插值基函数可写为： <span class="math display">$$
+L _ {j} (\tau) = \frac {g _ {N} (\tau)}{g _ {N} ^ {\prime} (\tau_ {j})
+(\tau - \tau_ {j})}, \quad g _ {N} (\tau) = \prod_ {j = 0} ^ {N} (\tau -
+\tau_ {j}).
+$$</span> 利用拉格朗日多项式近似的函数可以表示如下: <span
+class="math display">$$
+u (x) = \sum_ {j = 0} ^ {n} u _ {i} l _ {i} (x)\tag{1}
+$$</span> 则u的一阶导数可以表述如下: <span class="math display">$$
+u ^ {\prime} (x) = \sum_ {j = 0} ^ {n} u _ {i} l _ {i} ^ {\prime}
+(x)\tag{2}
+$$</span>
+微分矩阵可由如下式推出(其中i=j处的微分矩阵元素值可由洛必达法则求极限得到)<sup>[9]</sup>:
+<span class="math display">$$
+D _ {i j} = \left\{ \begin{array}{l l} \frac {g _ {N} ^ {\prime} (t _
+{i})}{g _ {N} ^ {\prime} (t _ {j})} \frac {1}{t _ {i} - t _ {j}}, &amp;
+i \neq j, \\ \frac {g _ {N} ^ {\prime \prime} (t _ {i})}{2 g _ {N} ^
+{\prime} (t _ {i})}, &amp; i = j. \end{array} \right.
+$$</span> 利用重心拉格朗日插值<sup>[10]</sup>可以将微分项简化为 <span
+class="math display">$$
+\begin{array}{r l} &amp; l _ {j} ^ {\prime} (x _ {i}) = \frac {w _ {j} /
+w _ {i}}{x _ {i} - x _ {j}} \\ &amp; l _ {j} ^ {\prime} (x _ {j}) = -
+\sum_ {i \neq j} l _ {j} ^ {\prime} (x _ {i}) \end{array}\tag{3}
+$$</span></p>
+<p>其中 <span class="math display">$$
+w _ {j} = \frac {1}{\prod_ {k \neq j} (x _ {j} - x _ {k})}, \quad j = 0,
+\dots , n\tag{4}
+$$</span></p>
+<h2 id="勒让德多项式-legendre-polynomial">1.2.2 勒让德多项式 (Legendre
+polynomial)</h2>
+<p>1814年罗德利克
+(Rodrigul)给出了勒让德多项式的简单表达式<sup>[11]</sup> <span
+class="math display">$$
+P _ {N} (\tau) = \frac {1}{2 ^ {N} N !} \frac {d ^ {N}}{d \tau^ {N}}
+\big [ (\tau^ {2} - 1) ^ {N} \big ]
+$$</span>
+勒让德多项式根难以直接计算，一般采用如下递推方法结合牛顿法求解: <span
+class="math display">$$
+\begin{array}{c} P _ {0} (t) = 1 \\ P _ {1} (t) = t \\ (N + 1) \cdot P _
+{N + 1} (t) = (2 N + 1) \cdot t \cdot P _ {N} (t) - N \cdot P _ {N - 1}
+(t), \quad N \geq 1 \end{array}
+$$</span> 勒让德多项式还有以下恒等式(wiki上的,书本还没找到): <span
+class="math display">$$
+\begin{array}{c} \frac {x ^ {2} - 1}{n} \frac {d}{d x} P _ {n} (x) = x P
+_ {n} (x) - P _ {n - 1} (x) \\ \frac {d}{d x} P _ {n + 1} (x) = (n + 1)
+P _ {n} (x) + x \frac {d}{d x} P _ {n} (x) \\ (2 n + 1) P _ {n} (x) =
+\frac {d}{d x} (P _ {n + 1} (x) - P _ {n - 1} (x)) \end{array}\tag{5}
+$$</span></p>
+<h2 id="legendre-gauss-radaulgr-伪谱法">1.2.3 Legendre-Gauss-Radau(LGR)
+伪谱法</h2>
+<p>LGR 伪谱法即 RPM 作为一种直接法,
+已经经历了十足的探索<sup>[12-13,9,7,14-18]</sup>,
+其采用LGR配点作为原连续最优控制问题的非均匀离散点,使得原问题转换为可以求解的有限维非线性规划问题.LGR配点是如下
+N 阶 LGR多项式在区间[ 1,1) 上的根: <span
+class="math display"><em>R</em><sub><em>N</em></sub> = <em>P</em><sub><em>N</em> − 1</sub>(<em>τ</em>) + <em>P</em><sub><em>N</em></sub>(<em>τ</em>)</span>
+其中 <span class="math inline"><em>P</em><sub><em>N</em></sub></span> 和
+<span class="math inline"><em>P</em><sub><em>N</em></sub></span> 分别为
+N 阶以及 N-1 阶勒让德多项式.
+利用勒让德多项式的递推公式与牛顿法可以解得原方程的数值解. 考虑 N 个 LGR
+配点, <span
+class="math inline">(<em>τ</em><sub>1</sub>, <em>τ</em><sub>2</sub>, …, <em>τ</em><sub><em>n</em></sub>)</span>
+, 其中 <span class="math inline"><em>τ</em><sub>1</sub> = −1</span> 并且
+<span class="math inline"><em>τ</em><sub><em>N</em></sub> &lt; +1</span>
+. 新增右端点 <span
+class="math inline"><em>τ</em><sub><em>N</em> + 1</sub> = 1</span>
+作为节点. 注意到该节点并不属于 LGR 配点<sup>[13]</sup>,
+但是增加该节点有助于表述末端状态量. 因此对于一般 LGR 方法或 f-LGR 方法,
+初始控制量/末端控制量需要在求解完 NLP 问题后外推得到<sup>[19,17]</sup>.
+由于所有伪谱法的归一化时间间隔为 <span
+class="math inline"><em>τ</em> ∈ [−1, 1]</span> ],
+原最优控制问题的时间跨度为 <span
+class="math inline"><em>t</em> ∈ [<em>t</em><sub>0</sub>, <em>t</em><sub><em>f</em></sub>]</span>
+, 因此存在如下时域变换关系: <span class="math display">$$
+\begin{array}{l l} &amp; t = \frac {t _ {f} - t _ {0}}{2} \tau + \frac
+{t _ {f} + t _ {0}}{2} \\ t \in [ t _ {0}, t _ {f} ] &amp; \xleftarrow
+{} \quad \tau \in [ - 1, 1 ] \end{array}
+$$</span> 在这种方法下, 原动力学方程可以表示如下: <span
+class="math display">$$
+\dot {x} (\tau) = \frac {t _ {f} - t _ {0}}{2} f (x (\tau), u (\tau),
+\tau)\tag{7}
+$$</span></p>
+<p><span class="math display">$$
+\begin{array}{c} \dot {x} (\tau) \approx \dot {X} ^ {N} (\tau) = \sum_
+{k = 1} ^ {N + 1} X _ {i} \dot {L} _ {i} (\tau) = \sum_ {k = 1} ^ {N +
+1} D _ {i k} x (\tau_ {k}) \\ \sum_ {k = 1} ^ {N + 1} D _ {i k} x (\tau_
+{k}) = \frac {t _ {f} - t _ {0}}{2} f (x (\tau_ {i}), u (\tau_ {i}),
+\tau_ {i}), \quad i = 1, \dots , N. \end{array}\tag{8}
+$$</span> 对于包含右侧端点的最优控制问题,微分矩阵 <span
+class="math inline"><strong>D</strong> = [<em>D</em><sub><em>i</em><em>k</em></sub>]</span>
+并不是方阵. 最后,对于一般控制问题的 Bolza型代价函数: <span
+class="math display">$$
+J = \Phi (y (- 1), t _ {0}, y (+ 1), t _ {f}) + \frac {t _ {f} - t _
+{0}}{2} \int_ {- 1} ^ {1} g (y (\tau), u (\tau), \tau ; t _ {0}, t _
+{f}) d \tau\tag{9}
+$$</span> 利用 LGR 求积近似为: <span class="math display">$$
+J = \Phi \big (Y (\tau_ {1}), \tau_ {1}, Y (\tau_ {N + 1}), \tau_ {N +
+1} \big) + \frac {t _ {f} - t _ {0}}{2} \sum_ {k = 1} ^ {N} w _ {k} g
+\big (Y _ {k}, U _ {k}, \tau ; t _ {0}, t _ {f} \big)\tag{10}
+$$</span> LGR求积公式有下面两种表述<sup>[8]</sup>: <span
+class="math display">$$
+w _ {i} = \left\{ \begin{array}{l} \frac {2}{N ^ {2}}, \quad i = 1, \\
+\frac {1}{(1 - \tau_ {i}) \big [ \dot {P} _ {N - 1} (\tau_ {i}) \big ] ^
+{2}} = \frac {1 - \tau_ {i}}{[ N \cdot P _ {N - 1} (\tau_ {i}) ] ^ {2}},
+\quad 2 \leq i \leq N. \end{array} \right.
+$$</span></p>
+<h2 id="仅包含单侧端点">1.2.4 仅包含单侧端点</h2>
+<h2 id="参考文献">参考文献</h2>
+<p>[1] WANG J, ZHANG R, LI H. Disturbance rejection and convex
+optimization-based guidance for autonomous shipborne landing of a
+reusable rocket[J]. Aerospace Science and Technology, 2026: 111917.</p>
+<p>[2] SONG Z Y, WANG C, THEIL S, et al. Survey of autonomous guidance
+methods for powered planetary landing[J]. Frontiers of Information
+Technology &amp; Electronic Engineering, 2020, 21(5): 652-674.</p>
+<p>[3] 张晓文, 王天舒, 王大轶, 等.
+行星动力下降多约束最优反馈制导方法[J]. 宇航学报,2023, 44(8):
+1171-1182.</p>
+<p>[4] CHEN X, ZHANG R, LI H. Optimal feedback guidance with disturbance
+rejection for endoatmospheric powered descent[J]. Chinese Journal of
+Aeronautics, 2024: 103336.</p>
+<p>[5] CHAI R, SAVVARIS A, TSOURDOS A, et al. A review of optimization
+techniques in spacecraft flight trajectory design[J]. Progress in
+Aerospace Sciences, 2019, 109: 100543.</p>
+<p>[6] 杨智超. 可回收火箭动力下降轨迹优化及制导方法研究[D].
+哈尔滨工程大学, 2025.</p>
+<p>[7] GARG D, PATTERSON M A, FRANCOLIN C, et al. Direct trajectory
+optimization and costate estimation of finite-horizon and
+infinite-horizon optimal control problems using a radau pseudospectral
+method[J]. Computational Optimization and Applications, 2011, 49 (2):
+335-358.</p>
+<p>[8] ABRAMOWITZ M E, STEGUN I A E. Handbook of mathematical functions
+with formulas, graphs, and mathematical tables[M]. U.S. Department of
+Commerce, National Bureau of Standards, 1964.</p>
+<p>[9] FAHROO F, ROSS I M. Advances in pseudospectral methods for
+optimal control[C]// AIAA Guidance, Navigation and Control Conference
+and Exhibit. Honolulu, Hawaii: American Institute of Aeronautics and
+Astronautics, 2008.</p>
+<p>[10] BERRUT J P, TREFETHEN L N. Barycentric lagrange
+interpolation[J]. SIAM Review, 2004, 46(3): 501-517.</p>
+<p>[11] 李庆阳. 数值分析: 第 6 版[M]. 北京: 清华大学出版社, 2025.</p>
+<p>[12] GARG D, PATTERSON M, HAGER W W, et al. A unified framework for
+the numerical solution of optimal control problems using pseudospectral
+methods[J]. Automatica, 2010, 46(11): 1843-1851.</p>
+<p>[13] GARG D. Advances in global pseudospectral methods for optimal
+control[D]. USA: University of Florida, 2011.</p>
+<p>[14] TANG X, CHEN J. Direct trajectory optimization and costate
+estimation of infinitehorizon optimal control problems using collocation
+at the flipped legendre-gauss-radau points[J]. IEEE/CAA Journal of
+Automatica Sinica, 2016, 3(2): 174-183.</p>
+<p>[15] XIE L, ZHANG H, ZHOU X, et al. Hp-adaptive Pseudospectral Convex
+optimization for Rocket Powered Landing Trajectory Planning[C]//2019
+Chinese Automation Congress (CAC). 2019: 895-900.</p>
+<p>[16] ZHANG T, SU H, GONG C. Hp-adaptive RPD based sequential convex
+programming for reentry trajectory optimization[J]. Aerospace Science
+and Technology, 2022, 130: 107887.</p>
+<p>[17] SAGLIANO M. Pseudospectral convex optimization for powered
+descent and landing[J]. Journal of Guidance, Control, and Dynamics,
+2018, 41(2): 320-334.</p>
+<p>[18] CANNATARO B Ş, RAO A V, DAVIS T A. State-defect constraint
+pairing graph coarsening method for karush–kuhn–tucker matrices arising
+in orthogonal collocation methods</p>
+<p>for optimal control[J]. Computational Optimization and Applications,
+2016, 64(3): 793- 819.</p>
+<p>[19] SAGLIANO M, THEIL S, BERGSMA M, et al. On the radau
+pseudospectral method: Theoretical and implementation advances[J]. CEAS
+Space Journal, 2017, 9(3): 313-331.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.louisym.com/2026/07/08/hexo-next/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Louis Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="louis's blogs">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | louis's blogs">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/07/08/hexo-next/" class="post-title-link" itemprop="url">hexo-next</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-07-08 04:52:38" itemprop="dateCreated datePublished" datetime="2026-07-08T04:52:38-04:00">2026-07-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-07-09 02:59:34" itemprop="dateModified" datetime="2026-07-09T02:59:34-04:00">2026-07-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="个人博客制作">个人博客制作</h1>
+<p>本次博客采用Hexo-NexT+Cloudflare制作。后续可以尝试typecho ##
+官方网站</p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo:快速、简洁且高效的博客框架</a>
+<a target="_blank" rel="noopener" href="https://theme-next.js.org/">NexT:Theme for Hexo</a> <a
+target="_blank" rel="noopener" href="https://docs.github.com/en/get-started/using-git/about-git">About
+Git</a></p>
+<p><a
+target="_blank" rel="noopener" href="https://developers.cloudflare.com/pages/get-started/git-integration/">Cloudflare
+Docs:Git integration</a></p>
+<h2 id="部署流程">部署流程</h2>
+<h3 id="步骤">步骤</h3>
+<p>参考： <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/260957368">10
+大静态网站生成工具 | Linux 中国</a>, <a
+target="_blank" rel="noopener" href="https://juejin.cn/post/6921750181297782798">Hexo添加分类及标签（在Next主题下）</a>,
+<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/348892754">使用 Hexo 和 Cloudflare
+搭建你的博客</a>, <a
+target="_blank" rel="noopener" href="https://hexo.leelurker.com/posts/18142#%E5%8F%82%E8%80%83">Cloudflare
+Pages + Hexo 搭建个人博客</a>,</p>
+<ul>
+<li>购买域名</li>
+<li>下载安装并配置好git与node.js.验证方法： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
+确认无误后即可进行下面的步骤。</li>
+<li>创建好文件夹并安装Hexo</li>
+<li>安装NexT <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># download</span></span><br><span class="line"><span class="built_in">cd</span> hexo-site</span><br><span class="line">npm install hexo-theme-next</span><br><span class="line"></span><br><span class="line"><span class="comment"># upgrade</span></span><br><span class="line"><span class="built_in">cd</span> hexo-site</span><br><span class="line">npm install hexo-theme-next@latests</span><br></pre></td></tr></table></figure></li>
+<li>创建本地仓库推送至github</li>
+<li>在Cloudflare中的Workers &amp;
+Pages页面关联github仓库，并添加自定义域。 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># cloudflare中需要填</span><br><span class="line">npm install -g hexo; hexo clean; hexo generate</span><br><span class="line"># 并将输出目录写为public</span><br></pre></td></tr></table></figure> ### 优化</li>
+</ul>
+<h3 id="指令">指令</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">npm install</span><br><span class="line">hexo new [layout] &lt;title&gt;</span><br><span class="line"></span><br><span class="line">hexo new page --path &lt;path&gt; <span class="string">&quot;name&quot;</span></span><br><span class="line"></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment">#hexo g</span></span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment">#arg=</span></span><br><span class="line"><span class="comment"># -p</span></span><br><span class="line"><span class="comment"># -s </span></span><br><span class="line"><span class="comment"># -l</span></span><br><span class="line">hexo server [arg]</span><br><span class="line"></span><br><span class="line"><span class="comment">#all in one</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s -s</span><br></pre></td></tr></table></figure>
+<h2 id="issue">issue</h2>
+<h3 id="yml-config">yml config</h3>
+<p><a
+target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/#Configuration-Files">Configuration
+Files</a> 防止覆盖 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Installed through npm</span></span><br><span class="line"><span class="built_in">cp</span> node_modules/hexo-theme-next/_config.yml _config.next.yml</span><br><span class="line"><span class="comment"># Installed through Git</span></span><br><span class="line"><span class="built_in">cp</span> themes/next/_config.yml _config.next.yml</span><br></pre></td></tr></table></figure></p>
+<h3 id="categories-tags">Categories &amp; Tags</h3>
+<p>这两者的部署方法相同。首先输入 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+接着在创建好的index.md下，在开头添加上 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span>: <span class="string">&quot;categories&quot;</span></span><br></pre></td></tr></table></figure>
+如果发现创建的位置不对，并且<code>_config.next.yml</code>也修改了的话，需要重新clean并generate。</p>
+<h3 id="custom-home-page-archives">Custom Home Page &amp; Archives</h3>
+<p>参考：<a
+target="_blank" rel="noopener" href="https://zermzhang.github.io/2022/05/16/blog/hexo%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A1%B5/">hexo自定义主页</a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在/source/目录下</span></span><br><span class="line"><span class="built_in">touch</span> index.md</span><br></pre></td></tr></table></figure></p>
+<p>接着添加 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: home</span><br><span class="line">date: 2026-07-08 22:32:43</span><br><span class="line">type: &quot;home&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure> 并在<code>root-site</code>中添加 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo  new page archives</span><br></pre></td></tr></table></figure>
+并修改<code>index_generato</code>中的<code>path</code>字段为一空白文件夹，确保原始主页能够渲染。</p>
+<h3 id="social">Social</h3>
+<p>在<code>_config.next.yml</code>中的<code>social:</code>修改内容。</p>
+<h3 id="asset-folder"><a
+target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders">asset-folder</a></h3>
+<p>新建文章时会自动创建同名文件夹。 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># _config.yml</span><br><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure></p>
+<h3 id="latex">latex</h3>
+<p><a
+target="_blank" rel="noopener" href="https://aka.cy/2024/10/01/How-to-enable-LaTeX-support-in-hexo-next-theme/">How
+to enable LaTeX support in hexo-next theme</a> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># _config.next.yml</span><br><span class="line"> mathjax:</span><br><span class="line">    enable: true</span><br><span class="line"></span><br><span class="line"># bash</span><br><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save </span><br><span class="line"></span><br><span class="line"># front-matter</span><br><span class="line">mathjax: true</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.louisym.com/2026/07/08/git-cmd/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Louis Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="louis's blogs">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | louis's blogs">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/07/08/git-cmd/" class="post-title-link" itemprop="url">git-cmd</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2026-07-08 04:50:00 / 修改时间：04:50:12" itemprop="dateCreated datePublished" datetime="2026-07-08T04:50:00-04:00">2026-07-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.louisym.com/2026/07/07/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Louis Liu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="louis's blogs">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | louis's blogs">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/07/07/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-07-07 22:56:48" itemprop="dateCreated datePublished" datetime="2026-07-07T22:56:48-04:00">2026-07-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-07-08 05:45:18" itemprop="dateModified" datetime="2026-07-08T05:45:18-04:00">2026-07-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very
+first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for
+more info. If you get any problems when using Hexo, you can find the
+answer in <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or
+you can ask me on <a
+target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Louis Liu</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
