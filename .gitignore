@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Hexo generated files and cache
+public/
+db.json
+.deploy_git/
+
+# Local verification configuration
+_multiconfig.yml
+.private-backup/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.log
