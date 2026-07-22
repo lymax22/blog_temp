@@ -18,8 +18,8 @@ tags: "home"
 
 # 主要博客
 
-- {% post_link pseudospectral-method 伪谱法与最优控制 %}
-- {% post_link hexo-next Hexo-NexT 配合 Cloudflare 部署静态网站 %}
-- {% post_link git-cmd 常用 Git 命令 %}
+- {% post_link pseudospectral-method %}
+- {% post_link hexo-next %}
+- {% post_link git-cmd %}
 
 [查看全部文章](/ori/)
