@@ -675,6 +675,22 @@ canvas_ribbon:
 # More comment system plugins: https://github.com/next-theme/awesome-next/blob/main/README.md#comment
 # ---------------------------------------------------------------
 
+# giscus
+# Discussions are stored in the public GitHub repository below.
+giscus:
+  enable: true
+  repo: lymax22/blog_temp
+  repo_id: R_kgDOTRGl4A
+  category: Announcements
+  category_id: DIC_kwDOTRGl4M4DBtFx
+  mapping: title
+  strict: 0
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: bottom
+  theme: preferred_color_scheme
+  lang: zh-CN
+
 # Multiple Comment System Support
 comments:
   # Available values: tabs | buttons
