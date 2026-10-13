@@ -1,0 +1,28 @@
+name: DT14 online ECOS audit
+
+on:
+  push:
+    branches:
+      - codex/project-online-solve-audit
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run project-derived online ECOS audit
+        run: node scripts/project-terminal-online-solve.mjs
+      - name: Print result
+        if: always()
+        run: |
+          if [ -f project-online-solve-result.json ]; then
+            cat project-online-solve-result.json
+          fi
