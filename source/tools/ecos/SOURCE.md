@@ -8,7 +8,7 @@ This directory distributes an ECOS WebAssembly build together with the correspon
 - ECOS version: `2.0.8`
 - Source commit: `e2b58055e3fc8a7757c20284f19de27ecd8c3045`
 - Source bundle: [`source/ecos-wasm-source-e2b58055.zip`](./source/ecos-wasm-source-e2b58055.zip)
-- Source bundle SHA-256: `bbf02080af9f7229bd9021d0040f46dec5fae9b13ef3aa98bae2033b564b9bf6`
+- Source bundle SHA-256: `4985eeadb39c16f72966f5ca3444a32b0ca2f1150a9e288256f341fbda2e5421`
 - License: [GNU General Public License, version 3](./LICENSE.txt)
 
 ## Distributed artifacts
