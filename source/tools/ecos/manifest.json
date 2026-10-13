@@ -1,0 +1,25 @@
+{
+  "ecos_version": "2.0.8",
+  "ecos_header_version": "2.0.10",
+  "source_commit": "e2b58055e3fc8a7757c20284f19de27ecd8c3045",
+  "build_type": "wasm",
+  "compiler": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.2-git (7a2d97d627ff4945eae28847ce0387ac52b92c09)",
+  "emcc_version": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.2-git (7a2d97d627ff4945eae28847ce0387ac52b92c09)",
+  "idxint_bits": 32,
+  "pfloat_bits": 64,
+  "exports": [
+    "solveSocp"
+  ],
+  "artifacts": [
+    {
+      "file": "ecos.js",
+      "size_bytes": 57827,
+      "sha256": "0745ccc847515f620de7c3ac080c708dcfe35e08f77077b62213309fcf6064b5"
+    },
+    {
+      "file": "ecos.wasm",
+      "size_bytes": 102184,
+      "sha256": "bdd1405bf8b70bb6d596173e8fb11f32ee45f1bf45b1577bb8910e802787f998"
+    }
+  ]
+}

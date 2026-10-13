@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="在浏览器中运行 ECOS WebAssembly，求解 LP 和 SOCP 并检查 KKT 条件。">
+  <title>ECOS WASM 在线求解器</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Louis's Blog · Numerical Tools</p>
+      <h1>ECOS WASM 在线求解器</h1>
+      <p class="lede">所有计算都在当前浏览器内完成。输入不会上传到服务器。</p>
+    </header>
+
+    <section class="status-card" aria-labelledby="solver-status-heading">
+      <div>
+        <h2 id="solver-status-heading">Solver 状态</h2>
+        <p id="load-status" class="status pending" role="status">正在加载 ECOS WASM…</p>
+      </div>
+      <button id="analytic-button" type="button" disabled>Run analytic SOCP</button>
+      <button id="loop-button" class="secondary" type="button" disabled>Run 100 solves</button>
+    </section>
+
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">标准形式与变量约定</h2>
+      <div class="formula">
+        <code>minimize cᵀx</code><br>
+        <code>Ax = b</code><br>
+        <code>Gx + s = h, s ∈ K</code>
+      </div>
+      <p><code>x</code> 是原变量，<code>y</code> 是等式乘子，<code>z</code> 是锥不等式对偶变量，<code>s</code> 是锥松弛变量。</p>
+      <p>本站采用 <code>c + Aᵀy + Gᵀz = 0</code>，对偶目标为 <code>−(bᵀy + hᵀz)</code>。</p>
+    </section>
+
+    <section aria-labelledby="json-heading">
+      <div class="section-heading">
+        <div>
+          <h2 id="json-heading">Problem JSON</h2>
+          <p>矩阵可使用二维 dense 数组或 CSC 对象。当前页面限制输入文本不超过 500 KB。</p>
+        </div>
+        <button id="solve-button" type="button" disabled>Solve</button>
+      </div>
+      <label class="sr-only" for="problem-json">ECOS problem JSON</label>
+      <textarea id="problem-json" spellcheck="false" aria-describedby="json-help"></textarea>
+      <p id="json-help" class="hint">锥结构：<code>{ "l": 0, "q": [3], "nex": 0 }</code></p>
+      <p id="input-error" class="error" role="alert"></p>
+    </section>
+
+    <section class="results" aria-labelledby="result-heading">
+      <div>
+        <h2 id="result-heading">Result</h2>
+        <pre id="result-output">尚未求解。</pre>
+      </div>
+      <div>
+        <h2>KKT diagnostic</h2>
+        <pre id="kkt-output">尚未求解。</pre>
+      </div>
+    </section>
+
+    <section aria-labelledby="source-heading">
+      <h2 id="source-heading">版本、许可与源代码</h2>
+      <dl>
+        <div><dt>ECOS</dt><dd>2.0.8</dd></div>
+        <div><dt>Source commit</dt><dd><code>e2b58055e3fc8a7757c20284f19de27ecd8c3045</code></dd></div>
+        <div><dt>License</dt><dd><a href="./LICENSE.txt">GPL-3.0</a></dd></div>
+        <div><dt>Build manifest</dt><dd><a href="./manifest.json">manifest.json</a></dd></div>
+        <div><dt>Corresponding source</dt><dd><a href="./source/ecos-wasm-source-e2b58055.zip">ecos-wasm-source-e2b58055.zip</a></dd></div>
+        <div><dt>Source notes</dt><dd><a href="./SOURCE.md">SOURCE.md</a></dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
