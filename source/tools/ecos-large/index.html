@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Solve large sparse LP and SOCP problem.json files locally in a Web Worker with ECOS WebAssembly.">
+  <title>Large ECOS SOCP Solver</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Local numerical tool</p>
+      <h1>Large ECOS SOCP Solver</h1>
+      <p class="lede">Solve sparse LP and second-order cone problems in a background Web Worker.</p>
+      <div class="privacy" role="note">
+        <strong>Local processing only.</strong>
+        Selected problem files are not uploaded. Problem data stays in this browser, its Worker, and WASM memory.
+      </div>
+    </header>
+
+    <section aria-labelledby="status-heading">
+      <div class="section-heading">
+        <div>
+          <h2 id="status-heading">Solver status</h2>
+          <p id="load-status" class="status pending" role="status">Loading ECOS WASM in worker…</p>
+        </div>
+      </div>
+      <p id="input-error" class="error" role="alert"></p>
+    </section>
+
+    <section aria-labelledby="file-heading">
+      <div class="section-heading">
+        <div>
+          <h2 id="file-heading">Select problem</h2>
+          <p>Choose a local <code>problem.json</code> using sparse CSC matrices. Selection does not start a solve.</p>
+        </div>
+        <label class="file-button" for="problem-file">Choose JSON</label>
+        <input id="problem-file" type="file" accept=".json,application/json">
+      </div>
+      <p class="hint">Limits: 128 MiB file, n ≤ 20,000, m ≤ 100,000, p ≤ 20,000, total nnz ≤ 2,000,000. Large Solver v1 supports LP and SOC cones only.</p>
+    </section>
+
+    <section aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Problem Summary</h2>
+      <pre id="problem-summary">No problem loaded.</pre>
+      <div class="actions">
+        <button id="solve-button" type="button" disabled>Solve</button>
+        <button id="cancel-button" class="danger" type="button" disabled>Cancel</button>
+        <button id="download-button" class="secondary" type="button" disabled>Download result.json</button>
+      </div>
+    </section>
+
+    <section class="results" aria-labelledby="result-heading">
+      <div>
+        <h2 id="result-heading">Solver Result</h2>
+        <p class="hint">The page shows vector lengths, the first 12 values, and compact statistics. Download the local result for complete arrays.</p>
+        <pre id="result-output">尚未求解。</pre>
+      </div>
+      <div>
+        <h2>KKT Diagnostics</h2>
+        <p class="hint">Computed independently with sparse CSC operations for equality, cone affine, stationarity, complementarity, and cone membership.</p>
+        <pre id="kkt-output">尚未求解。</pre>
+      </div>
+    </section>
+
+    <section aria-labelledby="schema-heading">
+      <h2 id="schema-heading">Input contract</h2>
+      <p>Uses the existing ECOS standard form: minimize <code>cᵀx</code>, subject to <code>Ax=b</code> and <code>Gx+s=h</code>, <code>s∈K</code>.</p>
+      <p><code>G</code> and <code>A</code> must be CSC objects containing <code>rows</code>, <code>cols</code>, <code>values</code>, <code>colPointers</code>, and <code>rowIndices</code>. When <code>b=[]</code>, <code>A</code> may be omitted.</p>
+      <p>This page reuses the production <a href="../ecos/">ECOS WASM solver</a>. ECOS remains single-threaded; the Worker keeps the browser UI responsive.</p>
+    </section>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
