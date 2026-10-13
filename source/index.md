@@ -16,6 +16,10 @@ tags: "home"
 
 # 个人成果
 
+# 在线工具
+
+- [ECOS 在线 SOCP 求解器](/tools/ecos/)
+
 # 主要博客
 
 - {% post_link pseudospectral-method %}
