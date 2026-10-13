@@ -15,17 +15,25 @@ permissions:
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Run project-derived online ECOS audit
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install canonicalizer dependencies
+        run: python -m pip install --disable-pip-version-check numpy scipy
+      - name: Recheck project-derived terminal infeasibility core
         run: node scripts/project-terminal-online-solve.mjs
-      - name: Print result
+      - name: Build full DT14 V1 ECOS canonical problem
+        run: python scripts/build_dt14_full_v1_ecos.py
+      - name: Solve full DT14 V1 using deployed ECOS assets
+        run: node scripts/dt14-full-v1-online-solve.mjs
+      - name: Print reports
         if: always()
         run: |
-          if [ -f project-online-solve-result.json ]; then
-            cat project-online-solve-result.json
-          fi
+          if [ -f project-online-solve-result.json ]; then cat project-online-solve-result.json; fi
+          if [ -f dt14-full-v1-online-result.json ]; then cat dt14-full-v1-online-result.json; fi
