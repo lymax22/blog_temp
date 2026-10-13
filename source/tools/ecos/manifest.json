@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "ecos_version": "2.0.8",
   "ecos_header_version": "2.0.10",
   "source_commit": "e2b58055e3fc8a7757c20284f19de27ecd8c3045",
@@ -13,13 +14,36 @@
   "artifacts": [
     {
       "file": "ecos.js",
-      "size_bytes": 57827,
-      "sha256": "0745ccc847515f620de7c3ac080c708dcfe35e08f77077b62213309fcf6064b5"
+      "upstream_build_artifact": {
+        "line_endings": "CRLF",
+        "size_bytes": 57827,
+        "sha256": "0745ccc847515f620de7c3ac080c708dcfe35e08f77077b62213309fcf6064b5"
+      },
+      "deployed_artifact": {
+        "line_endings": "LF",
+        "normalization": "CRLF_TO_LF",
+        "size_bytes": 56222,
+        "sha256": "92e0f8c60004fd8edb74e37a189b430086b37662fcef28d361e25de0a28e070f"
+      }
     },
     {
       "file": "ecos.wasm",
-      "size_bytes": 102184,
-      "sha256": "bdd1405bf8b70bb6d596173e8fb11f32ee45f1bf45b1577bb8910e802787f998"
+      "upstream_build_artifact": {
+        "representation": "binary",
+        "size_bytes": 102184,
+        "sha256": "bdd1405bf8b70bb6d596173e8fb11f32ee45f1bf45b1577bb8910e802787f998"
+      },
+      "deployed_artifact": {
+        "representation": "binary",
+        "normalization": "NONE",
+        "size_bytes": 102184,
+        "sha256": "bdd1405bf8b70bb6d596173e8fb11f32ee45f1bf45b1577bb8910e802787f998"
+      }
     }
-  ]
+  ],
+  "corresponding_source": {
+    "file": "source/ecos-wasm-source-e2b58055.zip",
+    "size_bytes": 159125,
+    "sha256": "4985eeadb39c16f72966f5ca3444a32b0ca2f1150a9e288256f341fbda2e5421"
+  }
 }
