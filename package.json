@@ -3,13 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "npm run verify:ecos:source && hexo generate && npm run prepare:ecos:public && npm run verify:ecos:public",
+    "build": "npm run audit:dt14-online && hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "prepare:ecos:public": "node build-tools/prepare-ecos-deployment.mjs public/tools/ecos",
     "server": "hexo server",
     "verify:ecos:public": "node build-tools/verify-ecos-deployment.mjs --deployment public/tools/ecos",
-    "verify:ecos:source": "node build-tools/verify-ecos-deployment.mjs --source source/tools/ecos"
+    "verify:ecos:source": "node build-tools/verify-ecos-deployment.mjs --source source/tools/ecos",
+    "audit:dt14-online": "node scripts/project-terminal-online-solve.mjs"
   },
   "hexo": {
     "version": "7.3.0"
